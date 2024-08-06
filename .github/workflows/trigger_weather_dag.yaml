@@ -23,9 +23,9 @@ jobs:
           -H "Content-Type: application/json" \
           -u "$AIRFLOW_USERNAME:$AIRFLOW_PASSWORD" \
           -d '{
-                "dag_run_id": "string541",
-                "logical_date": "2024-08-06T11:41:22Z",
-                "execution_date": "2024-08-06T11:41:22Z",
+                "dag_run_id": "string545",
+                "logical_date": "2024-08-06T12:41:22Z",
+                "execution_date": "2024-08-06T12:41:22Z",
                 "conf": { },
                 "note": "string"
               }'
