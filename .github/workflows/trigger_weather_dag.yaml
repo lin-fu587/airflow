@@ -22,10 +22,10 @@ jobs:
         curl -X POST "$AIRFLOW_API_URL/dags/weather_dag/dagRuns" \
           -H "Content-Type: application/json" \
           -u "$AIRFLOW_USERNAME:$AIRFLOW_PASSWORD" \
-          -d '{
+          -d "{
                 "dag_run_id": "string578",
                 "logical_date": "2024-08-04T09:45:22Z",
                 "execution_date": "2024-08-04T09:45:22Z",
                 "conf": { },
                 "note": "string"
-              }'
+              }"
