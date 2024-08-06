@@ -19,9 +19,9 @@ jobs:
         AIRFLOW_USERNAME: ${{ secrets.AIRFLOW_USERNAME }}
         AIRFLOW_PASSWORD: ${{ secrets.AIRFLOW_PASSWORD }}
       run: |
-        curl -X POST "$AIRFLOW_API_URL/dags/weather_dag/dagRuns" \
+        curl -X POST "http://127.0.0.1:8080/api/v1/dags/weather_dag/dagRuns" \
           -H "Content-Type: application/json" \
-          -u "$AIRFLOW_USERNAME:$AIRFLOW_PASSWORD" \
+          -u "admin:c8QB49rm6kUeSAfp" \
           -d "{
                 "dag_run_id": "string578",
                 "logical_date": "2024-08-04T09:45:22Z",
