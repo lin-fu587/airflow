@@ -15,9 +15,9 @@ jobs:
 
     - name: Trigger Weather DAG
       env:
-        AIRFLOW_API_URL: ${{ secret.AIRFLOW_API_URL }}
-        AIRFLOW_USERNAME: ${{ secret.AIRFLOW_USERNAME }}
-        AIRFLOW_PASSWORD: ${{ secret.AIRFLOW_PASSWORD }}
+        AIRFLOW_API_URL: ${{ secrets.AIRFLOW_API_URL }}
+        AIRFLOW_USERNAME: ${{ secrets.AIRFLOW_USERNAME }}
+        AIRFLOW_PASSWORD: ${{ secrets.AIRFLOW_PASSWORD }}
       run: |
         curl -X POST "$AIRFLOW_API_URL/dags/weather_dag/dagRuns" \
           -H "Content-Type: application/json" \
